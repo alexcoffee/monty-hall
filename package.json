@@ -1,0 +1,32 @@
+{
+  "name": "monty_hall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.ts",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "build": "npm run clean && tsc",
+    "clean": "rimraf dist",
+    "prettier": "prettier '**/*.ts' '**/*.tsx' '**/*.js' '**/*.json'",
+    "prettier-write": "npm run prettier -- --write",
+    "prettier-check": "npm run prettier -- --check",
+    "lint": "tslint 'src/**/*.ts' 'test/**/*.ts' --format verbose",
+    "lint-fix": "npm run lint -- --fix",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.3",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "rimraf": "^2.6.3",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
